@@ -1,0 +1,46 @@
+<p>home works!</p>
+<h1>{{count1}}</h1>
+
+<!-- <button (click) = "increase()">Counter++</button>
+<button (click) = "decrease()" mat-raised-button #decButton>Counter--</button> -->
+<!-- <p>
+    Counter : {{_counterService.counter}}
+</p>
+
+<p>
+    Title : {{config.title}}
+</p>
+<p>
+    Description : {{config.description}}
+</p>
+<button (click)="authors.setdata(1)">Pass data to child</button> -->
+
+
+<!-- <p>Data from child component : {{testservice.myData}}</p> -->
+
+<!-- <h2>Authors</h2> -->
+<!--  Parent to Child
+Using @Input -->
+<!-- <app-author [data] = "_counterService.counter" [showAuthor] = "_counterService.counter > 4"></app-author> -->
+
+
+<!-- Using template reference -->
+<!-- <app-author #authors></app-author> -->
+
+<!-- using viewChild -->
+<!-- <app-author #authors></app-author> -->
+
+<!-- Using @Output and EventEmitter -->
+<!-- <app-author (myData) = "childData($event)"></app-author> -->
+
+<button (click) = "counter()" #btnCounter>Counter</button>
+
+<!-- <app-author [data] = "count" [data2] = "sach" [author] = 'obj'>
+    <h1>Content from Parent</h1>
+</app-author> -->
+
+<hr>
+
+<app-author [data] = "count" [data2] = "sach" [author] = 'obj'>
+    <app-author-address [address] = "address"></app-author-address>
+</app-author>

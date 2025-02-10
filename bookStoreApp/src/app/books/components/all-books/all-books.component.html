@@ -1,0 +1,16 @@
+<!-- <p>all-books works!</p> -->
+<!-- <a routerLink = "books/1">Go to all Books</a> -->
+
+<h2>All Books</h2>
+
+<a [routerLink]="'recent'">Recent Books</a>
+<br>
+<button mat-raised-button color = "primary" routerLink = "new">Add New Book</button>
+
+<!-- <button (click) = "increase()">Counter++</button>
+<button (click) = "decrease()">Counter--</button>
+<p>
+    Counter : {{_counterService.counter}}
+</p> -->
+
+<app-book-card [books] = "books"></app-book-card>

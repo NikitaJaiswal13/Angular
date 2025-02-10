@@ -1,0 +1,18 @@
+<div class="childComp">
+    <p>author works!</p>
+<!-- <p *ngIf = "showAuthor">Information coming from parent - {{data}}</p> -->
+
+<button (click) = "increaseCounter()">Click Me - {{childCounter}}</button>
+
+<p>Information coming from parent - {{data}}</p>
+
+<p>
+    Author Information : <br>
+    Id : {{author.id}}
+    Name : {{author.name}}
+</p>
+
+<ng-content></ng-content>
+
+<!-- <button (click) = "btnClicked()">Pass data to parent component</button> -->
+</div>
