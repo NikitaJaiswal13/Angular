@@ -1,0 +1,14 @@
+.add-book-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.add-book-form mat-form-field {
+    width: 100%;
+  }
+
+.toggle{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}

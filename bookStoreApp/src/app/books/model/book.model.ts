@@ -6,6 +6,8 @@ export class BookModel{
     public totalPages : number;
     private _author : string ;
     public price : priceModel;
+    public isPublished : boolean;
+    public publishedOn : Date
 
     // We can initialize all this 
     // And 

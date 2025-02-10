@@ -16,9 +16,15 @@
         <p>
             Price : {{book.price.value + ' ' + book.price.currency}}
         </p>
+        <p>
+          Is Published : {{book.isPublished}}
+        </p>
+        <p>
+          Published On : {{book.publishedOn}}
+        </p>
         <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
         <mat-card-actions>
-          <button mat-button>Detials</button>
+          <button mat-button>Details</button>
           <button mat-button>Share</button>
         </mat-card-actions>
       </mat-card>

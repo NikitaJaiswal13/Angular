@@ -19,13 +19,20 @@ export class AddNewBookComponent implements OnInit , AfterViewChecked{
 
   ngOnInit(): void { }
 
-  saveBook(value : any) : void{
-    console.log(value)
-    const book : BookModel = new BookModel()
+  saveBook(value: any): void {
+    console.log(value);
+    const book: BookModel = new BookModel();
     book.title = value.title;
     book.author = value.author;
-    book.price = value.price
-    book.totalPages = value.pages
-    this._bookService.addBook(value)
+    book.totalPages = value.pages;
+    book.isPublished = value.isPublished
+    book.publishedOn = value.publishedOn
+    book.price = {
+      currency: 'INR',
+      value: value.price
+    };
+    
+    this._bookService.addBook(book);
   }
+  
 }
