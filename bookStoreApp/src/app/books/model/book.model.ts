@@ -4,7 +4,7 @@ export class BookModel{
     public id : number;
     public title : string;
     public totalPages : number;
-    private _author : string ;
+    public author : string ;
     public price : priceModel;
     public isPublished : boolean;
     public publishedOn : Date
@@ -15,11 +15,11 @@ export class BookModel{
 
     // And if we dont wanna do that Getters and setters come into picture
 
-    public set author(value : string){
-        this._author = 'Author : '+ value;
-    }
+    // public set author(value : string){
+    //     this._author = 'Author : '+ value;
+    // }
 
-    public get author(){
-        return this._author;
-    }
+    // public get author(){
+    //     return this._author;
+    // }
 }
